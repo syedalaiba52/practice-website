@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - 1 (HTML, CSS) Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <!-- Hero and Content CSS -->
+  <style>
+    /* Hero */
+    .hero {
+      background-image: url("/images/image5.jpg");
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-inner {
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-inner h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
+
+    .hero-inner p {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4a90e2;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    button:hover {
+      background-color: #357ab8;
+    }
+
+    /* Content */
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 16px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .card:hover {
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      height: 300px;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      justify-items: center;
+      margin-top: 40px;
+    }
+  </style>
+
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <div class="brand">
+          <span>My Website</span>
+        </div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Welcome to Services Page</h1>
+        <p>Your one-stop solution for all your needs.</p>
+        <button>
+          <a href="#" class="btn">Get Started</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content section-margin section-padding-top">
+      <div class="container">
+        <div class="heading">
+          <h2>Our Services Gallery</h2>
+
+          <div class="services-grid">
+            <!-- CARD 1 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service1.jpg" alt="Service 1" />
+              </div>
+
+              <div class="card-content">
+                <h3>MOBILE APPLICATION</h3>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service2.jpg" alt="Service 2" />
+              </div>
+
+              <div class="card-content">
+                <h3>SOCIAL WEBSITE DESIGN</h3>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service3.jpg" alt="Service 3" />
+              </div>
+
+              <div class="card-content">
+                <h3>E-COMMERCE WEBSITE DESIGN</h3>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service4.jpg" alt="Service 4" />
+              </div>
+
+              <div class="card-content">
+                <h3>CORPORATE WEBSITE DESIGN</h3>
+              </div>
+            </div>
+            <!-- CARD 5 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service5.jpg" alt="Service 5" />
+              </div>
+
+              <div class="card-content">
+                <h3>WEB DEVELOPMENT</h3>
+              </div>
+            </div>
+            <!-- CARD 6 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service6.webp" alt="Service 6" />
+              </div>
+
+              <div class="card-content">
+                <h3>ADVERTISING</h3>
+              </div>
+            </div>
+            <!-- CARD 7 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service7.avif" alt="Service 7" />
+              </div>
+
+              <div class="card-content">
+                <h3>GAME DEVELOPMENT</h3>
+              </div>
+            </div>
+            <!-- CARD 8 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service8.webp" alt="Service 8" />
+              </div>
+
+              <div class="card-content">
+                <h3>UI/UX DESIGN</h3>
+              </div>
+            </div>
+            <!-- CARD 9 -->
+            <div class="card">
+              <div class="imgContainer">
+                <img src="/images/service9.webp" alt="Service 9" />
+              </div>
+
+              <div class="card-content">
+                <h3>SEO & DIGITAL MARKETING</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding-top">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>QUICK LINKS</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>FOLLOW US ON</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 My Website. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - 1 (HTML, CSS) About Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <!-- Hero and Content CSS -->
+  <style>
+    /* Hero */
+    .hero {
+      background-image: url("images/image6.webp");
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-inner {
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-inner h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
+
+    .hero-inner p {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4a90e2;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    button:hover {
+      background-color: #357ab8;
+    }
+
+    /* Content */
+    .border-bottom {
+      border-bottom: 0.5px solid #ded5d5;
+    }
+
+    .margin-bottom {
+      margin-bottom: 3rem !important;
+    }
+
+    .content .container .row .col ul {
+      list-style-type: none;
+    }
+
+    .content {
+      padding-bottom: 3rem !important;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .schedule {
+      margin-top: 25px;
+      font-weight: 600;
+    }
+
+    .schedule-margin {
+      margin-bottom: 40px;
+    }
+
+    .form {
+      padding: 20px;
+      text-align: left;
+      border: 1px solid #ccc;
+      border-radius: 16px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      background-color: #f9f9f9;
+      font-size: 1rem;
+      /* height: auto; */
+    }
+
+    .form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .form label {
+      /* display: block; */
+      margin-bottom: 8px;
+      /* font-weight: 600; */
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="tel"],
+    .form select,
+    .form textarea,
+    .form input[type="submit"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .form input[type="submit"] {
+      background-color: #4a90e2;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form input[type="submit"]:hover {
+      background-color: #357ab8;
+      color: #fff;
+    }
+
+    .form input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .form a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+
+    .form a:hover {
+      text-decoration: underline;
+      color: #357ab8;
+    }
+    .form:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      border: 1px solid #ccc;
+    }
+
+    .form input[type="text"]:focus,
+    .form input[type="email"]:focus,
+    .form input[type="tel"]:focus,
+    .form select:focus,
+    .form textarea:focus {
+      border-color: #4a90e2;
+      outline: none;
+      box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    }
+
+    .form input[type="submit"] {
+      margin-top: 20px;
+      padding: 5px;
+    }
+
+    .left-align {
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    .sub-heading {
+      font-size: 17px !important;
+      font-weight: 500;
+    }
+  </style>
+
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <div class="brand">
+          <span>My Website</span>
+        </div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Welcome to Contact Page</h1>
+        <p>Your one-stop solution for all your needs.</p>
+        <button>
+          <a href="#" class="btn">Get Started</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content section-margin section-padding-top">
+      <div class="container border-bottom">
+        <div class="row margin-bottom">
+          <div class="col">
+            <img
+              style="height: 700px"
+              src="/images/image7.jpg"
+              alt="image2"
+            />
+          </div>
+          <div class="col">
+            <p style="font-weight: 600">HOURS</p>
+            <p>DAYS WITH AN EVENT</p>
+            <p>Open until 30 minutes into the event</p>
+            <p class="schedule">REGULAR EXHIBITION HOURS</p>
+            <ul class="schedule-margin">
+              <li>Monday to Friday / 9.30am-5pm</li>
+              <li>Saturday / 10.30am-5pm</li>
+              <li>Sunday / 1 hour before events</li>
+            </ul>
+
+            <div class="form">
+              <h2>Let's Build Something Amazing Together</h2>
+
+              <form>
+                <label>Full Name</label><br />
+                <input type="text" placeholder="Enter Full Name" /><br />
+
+                <label>Email</label><br />
+                <input type="email" placeholder="Enter Email" /><br />
+
+                <label>Phone Number</label><br />
+                <input type="tel" placeholder="Enter Phone Number" /><br />
+
+                <label>Country</label><br />
+                <select>
+                  <option>Select a country</option>
+                  <option>Azerbaijan</option>
+                  <option>Bangladesh</option>
+                  <option>Bahrain</option>
+                  <option>China</option>
+                  <option>Iran</option>
+                  <option>Iraq</option>
+                  <option>Jordan</option>
+                  <option>Kazakhstan</option>
+                  <option>Kuwait</option>
+                  <option>Malaysia</option>
+                  <option>Pakistan</option>
+                  <option>Palestine</option>
+                  <option>Qatar</option>
+                  <option>Russia</option>
+                  <option>Turkey</option>
+                  <option>UAE</option>
+                </select>
+                <br />
+
+                <label>Message</label><br />
+                <textarea rows="6" placeholder="Write something.."></textarea>
+                <br />
+
+                <input type="checkbox" />
+                <label
+                  >You agree to our <a href="#">Terms of Service</a> and
+                  <a href="#">Privacy Policy</a>.</label
+                >
+
+                <input type="submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding-top">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>QUICK LINKS</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>FOLLOW US ON</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 My Website. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

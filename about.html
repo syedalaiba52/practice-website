@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - 1 (HTML, CSS) About Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <!-- Hero and Content CSS -->
+  <style>
+    /* Hero */
+    .hero {
+      background-image: url("images/image3.jpg");
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-inner {
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-inner h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
+
+    .hero-inner p {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4a90e2;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    button:hover {
+      background-color: #357ab8;
+    }
+
+    /* Content */
+    .border-bottom {
+      border-bottom: 0.5px solid #ded5d5;
+    }
+
+    .margin-bottom {
+      margin-bottom: 3rem !important;
+    }
+
+    .content {
+      padding-bottom: 3rem !important;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    .left-align {
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    .sub-heading {
+      font-size: 17px !important;
+      font-weight: 500;
+    }
+  </style>
+
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <div class="brand">
+          <span>My Website</span>
+        </div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Welcome to About Page</h1>
+        <p>Your one-stop solution for all your needs.</p>
+        <button>
+          <a href="#" class="btn">Get Started</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content section-margin section-padding-top">
+      <div class="container border-bottom">
+        <div class="row margin-bottom">
+          <div class="col">
+            <img src="images/image4.jpg" alt="image2" />
+          </div>
+          <div class="col">
+            <div class="heading left-align">
+              <h2>We Are Professional</h2>
+              <p class="sub-heading">Digital Team</p>
+            </div>
+
+            <p>
+              Our web design company specializes in the professional creation of
+              unique sites.
+            </p>
+            <p>
+              Our team constantly monitors the emergence of new technologies
+              that we are not afraid to implement in web projects. We create
+              only selling websites - this is an achievement by drawing the
+              design and working out usability. The approach to each new project
+              is individual, we treat every customer equally, regardless of the
+              size of the company and its budget.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding-top">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>QUICK LINKS</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>FOLLOW US ON</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 My Website. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
